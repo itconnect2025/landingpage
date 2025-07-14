@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Code, Database, Brain, BarChart3 } from "lucide-react";
 import projectsPreview from "@/assets/projects-preview.jpg";
 
 const ProjectPreviewSection = () => {
-  const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
     {
@@ -104,59 +102,57 @@ const ProjectPreviewSection = () => {
 
         <div className="max-w-6xl mx-auto">
           {/* Project Cards Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-8">
             {projects.map((project, index) => (
               <div 
                 key={project.id}
-                className={`card-elevated cursor-pointer transition-all duration-300 ${
-                  activeProject === index 
-                    ? 'scale-105 shadow-xl border-primary' 
-                    : 'hover:scale-102'
-                }`}
-                onClick={() => setActiveProject(index)}
+                className="card-elevated p-8"
               >
-                <div className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center text-white`}>
-                    {project.icon}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
-                      <div className="flex items-center space-x-2">
-                        <span className={`px-2 py-1 text-xs rounded-full ${
+                <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 space-y-6 lg:space-y-0">
+                  <div className="flex items-center space-x-4 lg:flex-col lg:space-x-0 lg:space-y-4 lg:items-start lg:w-80">
+                    <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center text-white flex-shrink-0`}>
+                      {project.icon}
+                    </div>
+                    <div className="lg:text-center lg:w-full">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">{project.title}</h3>
+                      <div className="flex items-center space-x-3 lg:justify-center">
+                        <span className={`px-3 py-1 text-sm rounded-full font-medium ${
                           project.difficulty === '초급' ? 'bg-green-100 text-green-600' :
                           project.difficulty === '중급' ? 'bg-yellow-100 text-yellow-600' :
                           'bg-red-100 text-red-600'
                         }`}>
                           {project.difficulty}
                         </span>
-                        <span className="text-sm text-muted-foreground">{project.time}</span>
+                        <span className="text-muted-foreground font-medium">{project.time}</span>
                       </div>
                     </div>
-                    <p className="text-muted-foreground mb-3">{project.description}</p>
+                  </div>
+                  
+                  <div className="flex-1 space-y-6">
+                    <p className="text-lg text-muted-foreground leading-relaxed">{project.description}</p>
                     
-                    {activeProject === index && (
-                      <div className="animate-slide-up">
-                        <div className="flex flex-wrap gap-2 mb-3">
-                          {project.tech.map((tech, i) => (
-                            <span key={i} className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
-                        <div className="grid grid-cols-2 gap-2 mb-4">
-                          {project.features.map((feature, i) => (
-                            <div key={i} className="flex items-center text-sm text-muted-foreground">
-                              <div className="w-1.5 h-1.5 bg-secondary rounded-full mr-2" />
-                              {feature}
-                            </div>
-                          ))}
-                        </div>
-                        <Button variant="outline" size="sm" className="text-primary border-primary hover:bg-primary hover:text-white">
-                          자세히 보기
-                        </Button>
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground mb-3">사용 기술</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tech.map((tech, i) => (
+                          <span key={i} className="px-4 py-2 bg-primary/10 text-primary font-medium rounded-full">
+                            {tech}
+                          </span>
+                        ))}
                       </div>
-                    )}
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground mb-3">주요 기능</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {project.features.map((feature, i) => (
+                          <div key={i} className="flex items-center text-muted-foreground">
+                            <div className="w-2 h-2 bg-secondary rounded-full mr-3 flex-shrink-0" />
+                            <span>{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
