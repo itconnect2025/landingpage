@@ -109,7 +109,7 @@ const ProjectPreviewSection = () => {
                 className="card-elevated p-8"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 space-y-6 lg:space-y-0">
-                  <div className="flex items-center space-x-4 lg:flex-col lg:space-x-0 lg:space-y-4 lg:items-start lg:w-80">
+                  <div className="flex items-center justify-center space-x-4 lg:flex-col lg:space-x-0 lg:space-y-4 lg:items-center lg:justify-center lg:w-80">
                     <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center text-white flex-shrink-0`}>
                       {project.icon}
                     </div>
