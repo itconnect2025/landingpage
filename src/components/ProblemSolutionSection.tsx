@@ -3,7 +3,7 @@ import { CheckCircle, X, ArrowRight } from "lucide-react";
 const ProblemSolutionSection = () => {
   const problems = [
     "개발자 구할 돈도 시간도 없어서...",
-    "아이디어 검증할 MVP 하나 만드는데 몇 개월?",
+    "아이디어 검증할 MVP 만드는데 수 천만원?",
     "코딩 학원 다닐 여유 없는데...",
     "기술 문서만 봐도 머리가 아픈데..."
   ];
@@ -120,14 +120,20 @@ const ProblemSolutionSection = () => {
         <div className="mt-16 text-center">
           <div className="inline-block card-gradient glow-primary p-8">
             <h3 className="text-2xl font-bold text-primary mb-4">투자 대비 수익률</h3>
-            <div className="flex items-center justify-center space-x-4">
-              <span className="text-3xl font-bold text-red-500 line-through">300만원</span>
+            <div className="flex items-center justify-center space-x-4 mb-4">
+              <span className="text-3xl font-bold text-red-500 line-through">수천만원</span>
               <ArrowRight className="w-6 h-6 text-muted-foreground" />
-              <span className="text-4xl font-bold text-gradient-primary">10만원</span>
+              <span className="text-4xl font-bold text-gradient-primary">98,000원</span>
             </div>
-            <p className="text-lg text-muted-foreground mt-4">
-              <span className="text-accent font-bold">3000%</span> 비용 절감 효과
-            </p>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-3">
+                MVP 하나 제작하는데 보통 <span className="font-bold text-red-500">수백~수천만원</span>이 드는 외주 개발비를
+              </p>
+              <p className="text-lg text-muted-foreground">
+                단 <span className="text-accent font-bold">98,000원</span>의 강의료로 직접 만들어 
+                <span className="text-accent font-bold"> 비용을 크게 절감</span>할 수 있습니다
+              </p>
+            </div>
           </div>
         </div>
       </div>

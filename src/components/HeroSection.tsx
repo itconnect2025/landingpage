@@ -4,8 +4,7 @@ import heroBanner from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
   const handleGetStarted = () => {
-    const ctaSection = document.getElementById('final-cta');
-    ctaSection?.scrollIntoView({ behavior: 'smooth' });
+    window.open('https://b-creator.com', '_blank');
   };
 
   const handleFreeMaterials = () => {
@@ -62,7 +61,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center bg-white/20 backdrop-blur-sm px-6 py-3 rounded-2xl text-white">
               <Zap className="w-5 h-5 mr-2" />
-              <span className="font-semibold">실전 프로젝트 4개</span>
+              <span className="font-semibold">실전 프로젝트 5개</span>
             </div>
           </div>
 
@@ -79,7 +78,7 @@ const HeroSection = () => {
               onClick={handleFreeMaterials}
               className="btn-hero-outline"
             >
-              무료 학습자료 받기
+              커리큘럼 자세히 보기
             </Button>
           </div>
 

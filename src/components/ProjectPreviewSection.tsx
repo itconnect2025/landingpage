@@ -10,9 +10,9 @@ const ProjectPreviewSection = () => {
     {
       id: 0,
       title: "홍보용 랜딩페이지",
-      description: "Lovable + Supabase를 활용한 현대적인 비즈니스 랜딩페이지",
+      description: "AI를 활용한 현대적인 비즈니스 홍보 웹사이트 제작",
       icon: <ExternalLink className="w-6 h-6" />,
-      tech: ["Lovable", "Supabase", "React"],
+      tech: ["Lovable", "Claude", "React"],
       features: [
         "반응형 디자인",
         "SEO 최적화",
@@ -25,24 +25,24 @@ const ProjectPreviewSection = () => {
     },
     {
       id: 1,
-      title: "포트폴리오 사이트",
-      description: "21st.dev Magic MCP를 활용한 개인 브랜딩 웹사이트",
+      title: "포트폴리오 페이지",
+      description: "개인 브랜딩을 위한 전문적인 포트폴리오 웹사이트",
       icon: <Code className="w-6 h-6" />,
-      tech: ["Next.js", "MCP", "Tailwind"],
+      tech: ["React", "Tailwind", "Framer Motion"],
       features: [
         "프로젝트 갤러리",
         "이력서 다운로드",
         "연락처 통합",
-        "다크모드 지원"
+        "애니메이션 효과"
       ],
       difficulty: "초급",
-      time: "2.5시간",
+      time: "2시간",
       color: "from-green-500 to-teal-500"
     },
     {
       id: 2,
-      title: "카카오톡 감정분석 웹앱",
-      description: "AI API 연동을 통한 실시간 감정 분석 애플리케이션",
+      title: "카카오톡 감정분석",
+      description: "AI API를 활용한 카톡 대화 감정 분석 도구",
       icon: <Brain className="w-6 h-6" />,
       tech: ["React", "OpenAI API", "Chart.js"],
       features: [
@@ -52,13 +52,29 @@ const ProjectPreviewSection = () => {
         "PDF 리포트"
       ],
       difficulty: "중급",
-      time: "3시간",
+      time: "2시간",
       color: "from-orange-500 to-red-500"
     },
     {
       id: 3,
+      title: "리멤버 명함인식 기능",
+      description: "OCR 기술을 활용한 명함 자동 인식 및 관리 시스템",
+      icon: <Database className="w-6 h-6" />,
+      tech: ["React", "Tesseract.js", "Supabase"],
+      features: [
+        "이미지 OCR 인식",
+        "연락처 자동 저장",
+        "검색 및 분류",
+        "데이터 내보내기"
+      ],
+      difficulty: "중급",
+      time: "2시간",
+      color: "from-cyan-500 to-blue-500"
+    },
+    {
+      id: 4,
       title: "카페 입지선정 SaaS",
-      description: "데이터 분석과 시각화를 통한 비즈니스 인텔리전스 도구",
+      description: "데이터 분석을 통한 카페 최적 입지 선정 도구",
       icon: <BarChart3 className="w-6 h-6" />,
       tech: ["React", "Mapbox", "D3.js"],
       features: [
@@ -68,7 +84,7 @@ const ProjectPreviewSection = () => {
         "수익성 예측"
       ],
       difficulty: "고급",
-      time: "2.5시간",
+      time: "2시간",
       color: "from-purple-500 to-pink-500"
     }
   ];
@@ -78,7 +94,7 @@ const ProjectPreviewSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            10시간으로 이 <span className="text-gradient-primary">4가지 프로젝트</span>를<br />
+            10시간으로 이 <span className="text-gradient-primary">5가지 프로젝트</span>를<br />
             모두 완성합니다
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -86,23 +102,9 @@ const ProjectPreviewSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Project Preview Image */}
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src={projectsPreview} 
-                alt="프로젝트 미리보기" 
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-accent rounded-full flex items-center justify-center animate-pulse-slow">
-              <span className="text-white font-bold text-lg">4개</span>
-            </div>
-          </div>
-
-          {/* Project Tabs */}
-          <div className="space-y-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Project Cards Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <div 
                 key={project.id}
@@ -165,7 +167,7 @@ const ProjectPreviewSection = () => {
         {/* Summary Stats */}
         <div className="mt-20 grid md:grid-cols-4 gap-6">
           <div className="text-center card-gradient">
-            <div className="text-3xl font-bold text-gradient-primary mb-2">4개</div>
+            <div className="text-3xl font-bold text-gradient-primary mb-2">5개</div>
             <div className="text-muted-foreground">완성 프로젝트</div>
           </div>
           <div className="text-center card-gradient">
