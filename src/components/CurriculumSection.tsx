@@ -1,163 +1,200 @@
-import { CheckCircle, Clock, ArrowRight } from "lucide-react";
+import { CheckCircle, Clock, ArrowRight, BookOpen, Target, Code, Wrench, User, Brain, Rocket, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CurriculumSection = () => {
+  const handleGetStarted = () => {
+    window.open('https://b-creator.com', '_blank');
+  };
+
   const chapters = [
     {
-      id: 1,
-      title: "AI 바이브 코딩 입문",
-      duration: "30분",
-      description: "AI 도구들의 기본 개념과 개발 환경 설정",
-      topics: ["Cursor AI 설치 및 설정", "Claude & GPT 활용법", "프로젝트 구조 이해"],
-      result: "개발 환경 완성"
+      chapterNumber: 1,
+      title: "AI 시대에 살아남기 위한 전략",
+      description: "AI 시대의 필수 역량과 전략적 사고방식",
+      lessonCount: 3,
+      color: "from-blue-500 to-purple-600",
+      lessons: [
+        "창업가·기획자·마케터 모두 개발자가 되는 시대",
+        "단 한줄의 문장으로 만들어지는 프로급 웹 페이지",
+        "AI 활용도 300% 올리는 실전 프롬프트 작성 비법"
+      ]
     },
     {
-      id: 2,
-      title: "Lovable로 랜딩페이지 제작",
-      duration: "2시간",
-      description: "노코드 도구를 활용한 전문적인 웹사이트 제작",
-      topics: ["Lovable 플랫폼 활용", "반응형 디자인 적용", "SEO 최적화"],
-      result: "비즈니스 랜딩페이지 완성"
+      chapterNumber: 2,
+      title: "비개발자의 바이브코딩 완전정복",
+      description: "코딩 몰라도 가능한 바이브코딩의 모든 것",
+      lessonCount: 3,
+      color: "from-green-500 to-teal-600",
+      lessons: [
+        "코딩 몰라도 따라하면 되는 5단계 바이브코딩 공식",
+        "이제 나도 개발팀과 소통 가능! 핵심 IT 기초 지식",
+        "비개발자가 바이브코딩 성공을 위해 알아야 할 3가지"
+      ]
     },
     {
-      id: 3,
-      title: "Supabase 데이터베이스 연동",
-      duration: "1시간",
-      description: "백엔드 없이 데이터베이스 구축 및 연결",
-      topics: ["Supabase 설정", "테이블 설계", "실시간 데이터 연동"],
-      result: "데이터베이스 시스템 구축"
+      chapterNumber: 3,
+      title: "고객을 사로잡는 랜딩페이지 제작",
+      description: "클릭률 폭발시키는 전문가급 랜딩페이지",
+      lessonCount: 4,
+      color: "from-orange-500 to-red-600",
+      lessons: [
+        "AI와 함께하는 전문 기획자급 페이지 구상 실습",
+        "클릭률을 폭발시키는 AI 콘텐츠 기획 노하우",
+        "Lovable로 10분 만에 완성하는 눈길 끄는 웹사이트",
+        "코딩 1도 몰라도 가능한 상세페이지 수정 방법"
+      ]
     },
     {
-      id: 4,
-      title: "21st.dev MCP 포트폴리오",
-      duration: "2.5시간",
-      description: "Magic MCP를 활용한 개인 브랜딩 사이트",
-      topics: ["MCP 도구 활용", "포트폴리오 구조 설계", "개인 브랜딩 전략"],
-      result: "프로페셔널 포트폴리오 사이트"
+      chapterNumber: 4,
+      title: "바이브코딩 필수 도구 준비하기",
+      description: "개발 속도 10배 올리는 AI 도구 마스터",
+      lessonCount: 6,
+      color: "from-purple-500 to-pink-600",
+      lessons: [
+        "개발 속도 10배 올려주는 Cursor AI 알아보기",
+        "내 손발처럼 움직이는 AI 전문 개발자 만들기",
+        "항상 최신 트렌드로 코딩하는 AI 설정 가이드",
+        "오류 걱정 없는 AI 자동 수정 시스템 구축",
+        "전문가처럼 개발 계획을 세우는 방법",
+        "작업 효율 극대화하는 필수 Extension 완벽 세팅"
+      ]
     },
     {
-      id: 5,
-      title: "AI API 연동 기초",
-      duration: "1시간",
-      description: "OpenAI API를 활용한 인공지능 기능 구현",
-      topics: ["API 키 설정", "프롬프트 엔지니어링", "응답 처리"],
-      result: "AI 기능 기본 구조"
+      chapterNumber: 5,
+      title: "나만의 포트폴리오 페이지 만들기",
+      description: "인사팀 마음을 사로잡는 차별화된 포트폴리오",
+      lessonCount: 5,
+      color: "from-indigo-500 to-blue-600",
+      lessons: [
+        "인사팀 마음을 사로잡는 AI PRD & 콘텐츠 작성법",
+        "경쟁자를 압도하는 차별화된 포트폴리오 콘텐츠 기획",
+        "개성 넘치는 나만의 포트폴리오 사이트 바이브코딩",
+        "합격률 높이는 입사지원용 포트폴리오 실전 제작 1편",
+        "합격률 높이는 입사지원용 포트폴리오 실전 제작 2편"
+      ]
     },
     {
-      id: 6,
-      title: "카카오톡 감정분석 앱",
-      duration: "2시간",
-      description: "AI를 활용한 텍스트 감정 분석 웹앱 개발",
-      topics: ["파일 업로드 처리", "감정 분석 로직", "결과 시각화"],
-      result: "감정분석 웹앱 완성"
+      chapterNumber: 6,
+      title: "메시지 감정 분석 서비스 만들기",
+      description: "AI 기반 감정 분석 웹 서비스 개발",
+      lessonCount: 3,
+      color: "from-pink-500 to-rose-600",
+      lessons: [
+        "프로젝트 분석 및 기획서 작성 실습",
+        "바이브 코딩으로 감정 분석 웹 개발하기 - 1편",
+        "바이브 코딩으로 감정 분석 웹 개발하기 - 2편"
+      ]
     },
     {
-      id: 7,
-      title: "데이터 시각화 기초",
-      duration: "30분",
-      description: "Chart.js와 Mapbox를 활용한 데이터 표현",
-      topics: ["차트 라이브러리 활용", "지도 API 연동", "인터랙티브 UI"],
-      result: "시각화 컴포넌트 제작"
+      chapterNumber: 7,
+      title: "명함 인식 모바일 앱 만들기",
+      description: "체크리스트 기반 완벽한 앱 개발",
+      lessonCount: 3,
+      color: "from-yellow-500 to-orange-600",
+      lessons: [
+        "쉽게 만드는 프로젝트 기획 및 문서화 과정",
+        "빠뜨리지 않고 완성하는 체크리스트 기반 기능 개발",
+        "프로젝트 완성도 검증하기"
+      ]
     },
     {
-      id: 8,
-      title: "카페 입지선정 SaaS",
-      duration: "2시간",
-      description: "비즈니스 분석 도구 완성하기",
-      topics: ["지도 기반 분석", "데이터 통합", "리포트 생성"],
-      result: "완전한 SaaS 애플리케이션"
+      chapterNumber: 8,
+      title: "창업 아이템급 카페 입지 분석 SaaS",
+      description: "실제 수익 가능한 SaaS 개발 완성",
+      lessonCount: 3,
+      color: "from-emerald-500 to-green-600",
+      lessons: [
+        "실제 수익 가능한 SaaS 아이디어 분석",
+        "수준 있는 PRD & TRD 작성 완전 가이드",
+        "Claude Code로 완성하는 SaaS 웹 개발"
+      ]
     },
     {
-      id: 9,
-      title: "배포 및 운영",
-      duration: "30분",
-      description: "프로젝트 배포와 실제 서비스 운영",
-      topics: ["도메인 연결", "성능 최적화", "모니터링 설정"],
-      result: "실제 서비스 런칭"
+      chapterNumber: 9,
+      title: "바이브코딩으로 랜딩페이지 런칭",
+      description: "실제 서비스 런칭과 마케팅까지",
+      lessonCount: 7,
+      color: "from-red-500 to-pink-600",
+      lessons: [
+        "Lovable Project를 Cursor로 가져오기",
+        "사용자 경험을 업그레이드하는 디자인 디테일 완성",
+        "검색엔진 최적화 (SEO) 설정 및 등록하기",
+        "데이터 기반 의사결정을 위한 Google Analytics 설정",
+        "광고 성과 극대화하는 Facebook Pixel 완벽 설정",
+        "네이버·메타·구글 광고 진짜로 돌려보기",
+        "고객 행동 데이터로 서비스 개선하는 Hotjar 활용법"
+      ]
     }
   ];
 
-  const totalDuration = chapters.reduce((sum, chapter) => {
-    const hours = parseFloat(chapter.duration.replace('시간', '').replace('분', '분').includes('분') 
-      ? (parseFloat(chapter.duration.replace('분', '')) / 60).toString() 
-      : chapter.duration.replace('시간', ''));
-    return sum + hours;
-  }, 0);
+  const totalLessons = chapters.reduce((sum, chapter) => sum + chapter.lessonCount, 0);
 
   return (
-    <section id="curriculum" className="section-padding bg-gradient-subtle">
-      <div className="container mx-auto">
+    <section id="curriculum" className="section-padding bg-gradient-subtle lg:min-h-[500px]">
+      <div className="w-full pt-50 pb-50 px-2.5 sm:px-0">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            <span className="text-gradient-primary">9개 챕터</span>로 완성하는<br />
-            실전 코딩 여정
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
+            <BookOpen className="w-10 h-10 text-white" />
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <span className="text-primary">9개 챕터</span>로 완성하는<div style={{ height: '16px' }}></div>
+            실전 바이브코딩 여정
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
             체계적인 단계별 학습으로 초보자도 전문가 수준의 결과물을 만들 수 있습니다
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-gradient-primary text-white rounded-2xl">
             <Clock className="w-5 h-5 mr-2" />
-            <span className="font-bold">총 {Math.round(totalDuration)}시간 완주</span>
+            <span className="font-bold">총 {totalLessons}개 강의 완주</span>
           </div>
         </div>
 
-        {/* Timeline */}
-        <div className="max-w-4xl mx-auto">
-          <div className="relative">
-            {/* Vertical Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent" />
-
+        {/* Curriculum Grid */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {chapters.map((chapter, index) => (
-              <div key={chapter.id} className="relative flex items-start mb-12">
-                {/* Timeline Dot */}
-                <div className="relative z-10 flex items-center justify-center w-16 h-16 bg-white border-4 border-primary rounded-full shadow-lg">
-                  <span className="text-primary font-bold text-lg">{chapter.id}</span>
+              <div 
+                key={chapter.chapterNumber}
+                className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col"
+              >
+                {/* Chapter Number Badge */}
+                <div className="absolute top-6 left-6 z-10">
+                  <div className={`w-8 h-8 rounded-full bg-gradient-to-br ${chapter.color} flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
+                    {chapter.chapterNumber}
+                  </div>
                 </div>
 
-                {/* Content Card */}
-                <div className="ml-8 flex-1">
-                  <div className="card-elevated hover:shadow-xl transition-all duration-300 group">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                          {chapter.title}
-                        </h3>
-                        <p className="text-muted-foreground mb-3">{chapter.description}</p>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Clock className="w-4 h-4 text-muted-foreground" />
-                        <span className="text-sm text-muted-foreground font-medium">{chapter.duration}</span>
-                      </div>
-                    </div>
+                {/* Card Content */}
+                <div className="p-8 pt-20 flex-1 flex flex-col">
+                  {/* Title */}
+                  <div className="mb-2">
+                    <h3 className="text-2xl font-bold text-foreground leading-tight text-left">
+                      {chapter.title}
+                    </h3>
+                  </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {/* Topics */}
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-2" />
-                          학습 내용
-                        </h4>
-                        <ul className="space-y-2">
-                          {chapter.topics.map((topic, i) => (
-                            <li key={i} className="flex items-center text-sm text-muted-foreground">
-                              <CheckCircle className="w-4 h-4 text-secondary mr-2 flex-shrink-0" />
-                              {topic}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                  {/* Description */}
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed text-left">
+                    {chapter.description}
+                  </p>
 
-                      {/* Result */}
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                          <div className="w-2 h-2 bg-secondary rounded-full mr-2" />
-                          완성 결과물
-                        </h4>
-                        <div className="p-4 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-lg border border-secondary/20">
-                          <p className="text-sm font-medium text-foreground">{chapter.result}</p>
+                  {/* Lessons List */}
+                  <div className="flex-1">
+                    <div className="space-y-3">
+                      {chapter.lessons.map((lesson, idx) => (
+                        <div key={idx} className="flex items-start">
+                          <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span className="text-sm text-muted-foreground leading-relaxed">{lesson}</span>
                         </div>
-                      </div>
+                      ))}
                     </div>
+                  </div>
+
+                  {/* Lesson Count */}
+                  <div className="mt-6 pt-4 border-t border-gray-100">
+                    <span className="text-sm text-muted-foreground">
+                      {chapter.lessonCount}개 강의
+                    </span>
                   </div>
                 </div>
               </div>
@@ -165,21 +202,19 @@ const CurriculumSection = () => {
           </div>
         </div>
 
-        {/* Progress Summary */}
-        <div className="mt-16 text-center">
-          <div className="inline-block card-gradient glow-primary p-8 max-w-md mx-auto">
-            <h3 className="text-2xl font-bold text-gradient-primary mb-4">학습 완료 후</h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p>✅ 4개의 완성된 프로젝트</p>
-              <p>✅ 실무에서 바로 활용 가능한 스킬</p>
-              <p>✅ AI 도구 마스터 인증서</p>
-              <p>✅ 평생 업데이트 지원</p>
-            </div>
-            <Button className="btn-hero mt-6 w-full">
-              이 모든 과정을 단 10시간에
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </div>
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <Button 
+            onClick={handleGetStarted}
+            className="btn-hero glow-accent group text-xl px-12 py-6 h-auto relative overflow-hidden"
+            style={{
+              animation: 'glowPulse 2s infinite'
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 animate-pulse"></div>
+            <span className="relative z-10">지금 바로 시작하기</span>
+            <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-1 transition-transform relative z-10" />
+          </Button>
         </div>
       </div>
     </section>

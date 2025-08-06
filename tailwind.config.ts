@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -69,6 +70,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom brand colors
+				brand: {
+					primary: '#1d2088',
+					'primary-light': '#2f3191',
+					'primary-dark': '#152a7a',
+					'primary-active': '#2641b9',
+					secondary: '#129ce9',
+					'secondary-dark': '#0077ca',
+					'secondary-light': '#00b0f0',
+				},
+				text: {
+					primary: '#222111',
+					secondary: '#111',
+					tertiary: '#333',
+					muted: '#666',
+					copyright: '#999',
+				},
+				bg: {
+					section: '#fbfbfb',
+					footer: '#020b35',
+				},
+				borderCustom: {
+					light: '#ececec',
 				}
 			},
 			backgroundImage: {
@@ -114,5 +139,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [tailwindcssAnimate],
 } satisfies Config;

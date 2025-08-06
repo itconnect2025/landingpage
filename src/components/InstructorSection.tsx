@@ -1,176 +1,101 @@
-import { Award, BookOpen, Users, TrendingUp } from "lucide-react";
-import instructorProfile from "@/assets/instructor-profile.jpg";
+import { Award, BookOpen, Users, TrendingUp, User, ExternalLink, Youtube } from "lucide-react";
+import instructorProfile from "@/assets/person.jpg";
+import { Button } from "@/components/ui/button";
 
 const InstructorSection = () => {
-  const achievements = [
-    {
-      icon: <Award className="w-6 h-6" />,
-      title: "15년차 경력",
-      description: "제품 기획 및 개발 분야"
-    },
-    {
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "500+ 수강생",
-      description: "성공적인 교육 경험"
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "10+ 프로젝트",
-      description: "실무 런칭 경험"
-    },
-    {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "95% 만족도",
-      description: "수강생 평가 기준"
-    }
+  const experiences = [
+    "현) 아이티커넥트(주) CEO",
+    "현) 청년창업사관학교 15기",
+    "현) 인프런 강사",
+    "현) 비크리에이터 대표 강사",
+    "현) (주)언더독스 창업퍼실리테이터",
+    "현) 아이티커넥트 유튜브 채널 운영",
+    "전) (주)엔코아 IT교육 전략기획실장",
+    "전) (주)코코로톡 COO",
+    "전) (주)L&CA CEO"
   ];
 
-  const experiences = [
-    "네이버 블로그 플랫폼 기획 (MAU 3000만+)",
-    "카카오 메신저 서비스 개발 참여",
-    "스타트업 CTO로 3년간 팀 리딩",
-    "AI 스타트업 제품 기획 및 개발",
-    "온라인 교육 플랫폼 구축 경험"
-  ];
+  const handleWebsiteClick = () => {
+    window.open('https://itconnect.dev', '_blank');
+  };
+
+  const handleYoutubeClick = () => {
+    window.open('https://www.youtube.com/@itconnect_dev', '_blank');
+  };
 
   return (
-    <section className="section-padding bg-gradient-subtle">
-      <div className="container mx-auto">
+    <section className="section-padding bg-white lg:min-h-[500px]">
+      <div className="w-full pt-50 pb-50 px-2.5 sm:px-0">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            <span className="text-gradient-primary">15년차 제품 기획자</span>가<br />
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
+            <User className="w-10 h-10 text-white" />
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <span className="text-primary">비개발자 출신의 IT 개발 대표</span>가<div style={{ height: '16px' }}></div>
             직접 알려드립니다
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            이론보다 실전, 암기보다 활용에 집중한 현직 개발자의 생생한 노하우
+          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
+            개발자가 아닌 사람도 충분히 따라할 수 있도록 바이브코딩 노하우 전수
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Instructor Photo & Basic Info */}
-          <div className="text-center lg:text-left">
-            <div className="relative inline-block mb-8">
-              <img 
-                src={instructorProfile} 
-                alt="강사 프로필" 
-                className="w-80 h-80 rounded-3xl object-cover shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                15년
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
+            {/* Instructor Photo & Basic Info */}
+            <div className="text-center lg:text-right">
+              <div className="relative inline-block mb-8">
+                <img 
+                  src={instructorProfile} 
+                  alt="강사 프로필" 
+                  className="w-auto h-auto max-w-sm rounded-3xl object-contain shadow-2xl"
+                />
               </div>
-            </div>
-            
-            <h3 className="text-3xl font-bold text-foreground mb-4">김테크 (Kim Tech)</h3>
-            <p className="text-xl text-primary font-semibold mb-4">시니어 제품 기획자 / 풀스택 개발자</p>
-            <p className="text-muted-foreground mb-6 max-w-md mx-auto lg:mx-0">
-              "복잡한 기술을 쉽게 전달하는 것이 제 강점입니다. 
-              실무에서 바로 써먹을 수 있는 실전 노하우를 공유합니다."
-            </p>
-
-            {/* Achievements Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              {achievements.map((achievement, index) => (
-                <div key={index} className="card-elevated text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center text-white mx-auto mb-3">
-                    {achievement.icon}
-                  </div>
-                  <h4 className="font-bold text-foreground mb-1">{achievement.title}</h4>
-                  <p className="text-sm text-muted-foreground">{achievement.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Experience & Philosophy */}
-          <div className="space-y-8">
-            {/* Experience Section */}
-            <div className="card-elevated">
-              <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
-                <div className="w-3 h-3 bg-gradient-primary rounded-full mr-3" />
-                주요 경력 사항
-              </h3>
-              <ul className="space-y-4">
-                {experiences.map((experience, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0" />
-                    <span className="text-muted-foreground">{experience}</span>
-                  </li>
-                ))}
-              </ul>
+              
+              <h3 className="text-3xl font-bold text-foreground mb-4">최원재</h3>
+              <p className="text-xl text-primary font-semibold mb-4">아이티커넥트 대표</p>
+              <p className="text-muted-foreground max-w-md mx-auto lg:ml-auto lg:mr-0">
+                "AI가 발전할 수록 이제 프로그래밍 영역도 Excel을 다루듯 누구나 해야 하는 영역이 될 것입니다. 그 시작이 바이브코딩입니다. 비개발자의 시선에서 최대한 친근하게 접근할 수 있도록 강의를 준비했습니다."
+              </p>
             </div>
 
-            {/* Teaching Philosophy */}
-            <div className="card-gradient glow-primary">
-              <h3 className="text-2xl font-bold text-gradient-primary mb-6">교육 철학</h3>
+            {/* Experience & Buttons */}
+            <div className="space-y-8 h-full flex flex-col">
+              {/* Experience Section */}
+              <div className="card-elevated flex-1 flex flex-col justify-center">
+                <h3 className="text-3xl font-bold text-foreground mb-6 flex items-center">
+                  <div className="w-3 h-3 bg-gradient-primary rounded-full mr-3" />
+                  주요 경력 사항
+                </h3>
+                <ul className="space-y-4">
+                  {experiences.map((experience, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0" />
+                      <span className="text-lg text-muted-foreground">{experience}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Buttons */}
               <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
-                    1
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">실전 중심 학습</h4>
-                    <p className="text-sm text-muted-foreground">이론보다는 실제 프로젝트를 만들면서 자연스럽게 학습</p>
-                  </div>
-                </div>
+                <Button 
+                  onClick={handleWebsiteClick}
+                  variant="outline" 
+                  className="w-full text-lg py-4 border-2 border-primary text-primary hover:bg-primary hover:text-white group"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  아이티커넥트 공식 홈페이지 방문하기
+                </Button>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
-                    2
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">AI 도구 활용</h4>
-                    <p className="text-sm text-muted-foreground">최신 AI 도구를 활용해서 효율성과 퀄리티 모두 확보</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
-                    3
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">즉시 활용 가능</h4>
-                    <p className="text-sm text-muted-foreground">수강 당일부터 실제 비즈니스에 적용할 수 있는 결과물</p>
-                  </div>
-                </div>
+                <Button 
+                  onClick={handleYoutubeClick}
+                  variant="outline" 
+                  className="w-full text-lg py-4 border-2 border-primary text-primary hover:bg-primary hover:text-white group"
+                >
+                  <Youtube className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  아이티커넥트 유튜브 채널 구경하기
+                </Button>
               </div>
-            </div>
-
-            {/* Quote */}
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-3xl border border-primary/20">
-              <blockquote className="text-lg font-medium text-foreground mb-4 italic">
-                "기술은 도구일 뿐입니다. 중요한 것은 그 도구로 무엇을 만들어낼 수 있는지에 대한 상상력입니다."
-              </blockquote>
-              <cite className="text-muted-foreground">- 김테크 강사</cite>
-            </div>
-          </div>
-        </div>
-
-        {/* Support System */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-8">완벽한 학습 지원 시스템</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card-elevated">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center text-white mx-auto mb-4">
-                <BookOpen className="w-8 h-8" />
-              </div>
-              <h4 className="font-bold text-foreground mb-2">1:1 질문 채널</h4>
-              <p className="text-sm text-muted-foreground">강의 중 막히는 부분은 언제든지 개별 문의</p>
-            </div>
-            
-            <div className="card-elevated">
-              <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center text-white mx-auto mb-4">
-                <Users className="w-8 h-8" />
-              </div>
-              <h4 className="font-bold text-foreground mb-2">수강생 커뮤니티</h4>
-              <p className="text-sm text-muted-foreground">동료 수강생들과 정보 공유 및 네트워킹</p>
-            </div>
-            
-            <div className="card-elevated">
-              <div className="w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center text-white mx-auto mb-4">
-                <TrendingUp className="w-8 h-8" />
-              </div>
-              <h4 className="font-bold text-foreground mb-2">평생 업데이트</h4>
-              <p className="text-sm text-muted-foreground">새로운 AI 도구와 기술 트렌드 지속 제공</p>
             </div>
           </div>
         </div>

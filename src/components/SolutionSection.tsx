@@ -1,6 +1,6 @@
-import { CheckCircle, X, ArrowRight, Star, Target } from "lucide-react";
+import { CheckCircle, X, Rocket } from "lucide-react";
 
-const ValuePropositionSection = () => {
+const SolutionSection = () => {
   const comparisons = [
     {
       category: "학습 기간",
@@ -28,44 +28,25 @@ const ValuePropositionSection = () => {
     }
   ];
 
-  const benefits = [
-    {
-      title: "시간 효율성",
-      description: "기존 대비 95% 시간 단축",
-      value: "3000시간 → 10시간",
-      icon: "⏰"
-    },
-    {
-      title: "비용 효율성",
-      description: "개발 외주비 대비 97% 절약",
-      value: "수천만원 → 98,000원",
-      icon: "💰"
-    },
-    {
-      title: "실용성",
-      description: "바로 사업에 활용 가능",
-      value: "MVP 테스트 가능",
-      icon: "🚀"
-    }
-  ];
-
   return (
-    <section className="section-padding bg-white lg:min-h-[500px]">
+    <section className="section-padding bg-white relative overflow-hidden lg:min-h-[500px]">
       <div className="w-full pt-50 pb-50 px-2.5 sm:px-0">
+        {/* Solution Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
-            <Target className="w-10 h-10 text-white" />
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-full mb-6">
+            <Rocket className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            다른 강의와 <span className="text-primary">뭐가 다른가요?</span>
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <span className="text-primary">AI 바이브코딩이</span><br className="block sm:hidden" />
+            <span className="sm:inline">해답입니다</span>
           </h2>
-          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
-            기존 코딩 교육의 한계를 뛰어넘는 혁신적인 학습 경험을 제공합니다
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            전통적인 코딩 교육의 한계를 뛰어넘어, AI와 함께하는 새로운 학습 경험을 제공합니다
           </p>
         </div>
 
         {/* Comparison Table */}
-        <div className="max-w-6xl mx-auto mb-16">
+        <div className="max-w-6xl mx-auto">
           {/* Desktop Table */}
           <div className="hidden md:block bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
             {/* Header */}
@@ -136,45 +117,9 @@ const ValuePropositionSection = () => {
             ))}
           </div>
         </div>
-
-        {/* ROI Benefits */}
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="card-elevated text-center hover:scale-105 transition-transform duration-300">
-                <div className="text-6xl mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
-                <p className="text-muted-foreground mb-4">{benefit.description}</p>
-                <div className="text-2xl font-bold text-primary">{benefit.value}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Value Highlights */}
-        <div className="max-w-7xl mx-auto">
-          <div className="card-gradient glow-primary">
-            <h3 className="text-2xl font-bold text-primary mb-6">이 강의로 얻는 것</h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                "실제 창업 아이템 기반 프로젝트 경험",
-                "AI 도구를 활용한 효율적인 개발 프로세스",
-                "평생 사용 가능한 소스코드와 템플릿",
-                "지속적인 기술 업데이트와 커뮤니티 지원",
-                "개발 외주 없이도 자립할 수 있는 능력",
-                "창업 아이디어를 빠르게 검증할 수 있는 스킬"
-              ].map((item, i) => (
-                <div key={i} className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
 };
 
-export default ValuePropositionSection;
+export default SolutionSection; 
