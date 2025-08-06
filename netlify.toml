@@ -1,7 +1,7 @@
 [build]
   base = "quick-code-mvp/"
   publish = "quick-code-mvp/dist"
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 [[redirects]]
   from = "/*"
@@ -9,4 +9,6 @@
   status = 200
 
 [build.environment]
-  NODE_VERSION = "18" 
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--production=false"
+  CI = "false" 
