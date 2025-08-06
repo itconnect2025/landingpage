@@ -1,6 +1,5 @@
 [build]
-  base = "quick-code-mvp/"
-  publish = "quick-code-mvp/dist"
+  publish = "dist"
   command = "npm ci && npm run build"
 
 [[redirects]]
