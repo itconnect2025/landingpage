@@ -118,22 +118,20 @@ const ProjectSection = () => {
         </div>
 
         {/* Summary Stats */}
-        <div className="mt-20 grid md:grid-cols-4 gap-6">
-          <div className="text-center card-gradient">
-            <div className="text-3xl font-bold text-primary mb-2">5개</div>
-            <div className="text-muted-foreground">완성 프로젝트</div>
-          </div>
-          <div className="text-center card-gradient">
-            <div className="text-3xl font-bold text-primary mb-2">10시간</div>
-            <div className="text-muted-foreground">총 학습 시간</div>
-          </div>
-          <div className="text-center card-gradient">
-            <div className="text-3xl font-bold text-primary mb-2">100%</div>
-            <div className="text-muted-foreground">실무 활용 가능</div>
-          </div>
-          <div className="text-center card-gradient">
-            <div className="text-3xl font-bold text-primary mb-2">평생</div>
-            <div className="text-muted-foreground">소스코드 제공</div>
+        <div className="max-w-7xl mx-auto mt-20">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center card-gradient">
+              <div className="text-3xl font-bold text-primary mb-2">5개</div>
+              <div className="text-muted-foreground">완성 프로젝트</div>
+            </div>
+            <div className="text-center card-gradient">
+              <div className="text-3xl font-bold text-primary mb-2">10시간</div>
+              <div className="text-muted-foreground">총 학습 시간</div>
+            </div>
+            <div className="text-center card-gradient">
+              <div className="text-3xl font-bold text-primary mb-2">100%</div>
+              <div className="text-muted-foreground">실무 활용 가능</div>
+            </div>
           </div>
         </div>
 

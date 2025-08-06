@@ -74,39 +74,41 @@ const ToolsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {tools.map((tool, index) => (
-            <div 
-              key={index}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100"
-            >
-              {/* Logo Image Area */}
-              <div className="w-full h-32 flex items-center justify-center relative overflow-hidden bg-white pt-4 pb-0">
-                {/* Actual logo image */}
-                <img 
-                  src={tool.image} 
-                  alt={`${tool.name} 로고`}
-                  className="w-20 h-20 object-contain"
-                />
-              </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {tools.map((tool, index) => (
+              <div 
+                key={index}
+                className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100"
+              >
+                {/* Logo Image Area */}
+                <div className="w-full h-32 flex items-center justify-center relative overflow-hidden bg-white pt-4 pb-0">
+                  {/* Actual logo image */}
+                  <img 
+                    src={tool.image} 
+                    alt={`${tool.name} 로고`}
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
 
-              {/* Content */}
-              <div className="px-6 pb-6 pt-0">
-                <div className="mb-3">
-                  <h3 className="text-3xl font-bold text-foreground mb-1">
-                    {tool.name}
-                  </h3>
-                  <p className="text-xl text-muted-foreground font-semibold">
-                    {tool.fullName}
+                {/* Content */}
+                <div className="px-6 pb-6 pt-0">
+                  <div className="mb-3">
+                    <h3 className="text-3xl font-bold text-foreground mb-1">
+                      {tool.name}
+                    </h3>
+                    <p className="text-xl text-muted-foreground font-semibold">
+                      {tool.fullName}
+                    </p>
+                  </div>
+                  
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    {tool.description}
                   </p>
                 </div>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {tool.description}
-                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
