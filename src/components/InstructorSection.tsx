@@ -46,8 +46,10 @@ const InstructorSection = () => {
               <div className="relative inline-block mb-8">
                 <img 
                   src={instructorProfile} 
-                  alt="강사 프로필" 
+                  alt="최원재 강사 프로필 - 아이티커넥트 대표, AI 코딩 부트캠프 강사" 
                   className="w-auto h-auto max-w-sm rounded-3xl object-contain shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               

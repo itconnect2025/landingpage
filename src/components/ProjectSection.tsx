@@ -88,8 +88,10 @@ const ProjectSection = () => {
                 <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
                   <img 
                     src={project.image} 
-                    alt={project.title}
+                    alt={`${project.title} 프로젝트 미리보기 - AI 코딩 부트캠프 ${project.difficulty} 난이도 ${project.time} 소요`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 

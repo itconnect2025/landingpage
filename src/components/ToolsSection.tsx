@@ -3,7 +3,7 @@ import chatgptImage from "../assets/chatgpt.png";
 import claudeImage from "../assets/Claude.png";
 import cursorAIImage from "../assets/Cursor-AI.png";
 import lovableImage from "../assets/Lovable.png";
-import supabaseImage from "../assets/Supabase-e1750392893989.png";
+import netlifyImage from "../assets/netlify_logo.png";
 import gensparkImage from "../assets/Genspark.jpg";
 
 const ToolsSection = () => {
@@ -41,12 +41,12 @@ const ToolsSection = () => {
       image: lovableImage
     },
     {
-      name: "Supabase",
-      fullName: "백엔드 플랫폼",
-      description: "PostgreSQL 기반의 백엔드 서비스 플랫폼",
+      name: "Netlify",
+      fullName: "프론트엔드 플랫폼",
+      description: "웹/앱을 빌드, 배포, 확장하는 서비스 플랫폼",
       color: "from-emerald-500 to-green-600",
       icon: "🗄️",
-      image: supabaseImage
+      image: netlifyImage
     },
     {
       name: "Genspark",
@@ -86,8 +86,10 @@ const ToolsSection = () => {
                   {/* Actual logo image */}
                   <img 
                     src={tool.image} 
-                    alt={`${tool.name} 로고`}
+                    alt={`${tool.name} ${tool.fullName} 로고 - AI 코딩 부트캠프에서 사용하는 ${tool.name} 도구`}
                     className="w-20 h-20 object-contain"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
 

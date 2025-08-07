@@ -1,0 +1,27 @@
+{
+  "name": "AI 바이브 코딩 부트캠프",
+  "short_name": "AI 코딩",
+  "description": "비전공자도 AI와 함께 10시간 만에 웹개발을 완성하는 실전 코딩 부트캠프",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "ko",
+  "dir": "ltr"
+} 

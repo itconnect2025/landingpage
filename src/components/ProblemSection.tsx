@@ -49,8 +49,10 @@ const ProblemSection = () => {
               <div className="flex items-center justify-center h-full min-h-[400px]">
                 <img 
                   src={problemImage} 
-                  alt="문제 해결을 고민하는 사람" 
+                  alt="AI 코딩 부트캠프 - 비전공자도 개발을 배우고 싶어하는 사람들의 고민과 해결책" 
                   className="w-full h-auto max-w-md object-contain"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
