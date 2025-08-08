@@ -66,10 +66,12 @@ const ToolsSection = () => {
             <Wrench className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">최신 AI 도구로</span> <br className="hidden sm:block" /> 개발자가 되는 프로젝트 강의
+            <span className="sm:hidden"><span className="text-primary">최신 AI 도구로</span> 개발자가 되는<br/> 프로젝트 강의</span>
+            <span className="hidden sm:block"><span className="text-primary">최신 AI 도구로</span> <br className="hidden sm:block" /> 개발자가 되는 프로젝트 강의</span>
           </h2>
-          <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
-            기획부터 개발까지, AI가 모두 도와주니까<br className="hidden sm:block"/> 개발자가 아니어도 할 수 있어요
+          <p className="text-[19px] sm:text-[19px] text-muted-foreground max-w-3xl mx-auto">
+            <span className="sm:hidden">기획부터 개발까지, AI가 모두 도와주니까<br/>개발자가 아니어도 할 수 있어요</span>
+            <span className="hidden sm:inline">기획부터 개발까지, AI가 모두 도와주니까<br className="hidden sm:block"/> 개발자가 아니어도 할 수 있어요</span>
           </p>
         </div>
 

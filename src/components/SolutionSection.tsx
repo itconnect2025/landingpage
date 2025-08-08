@@ -37,11 +37,11 @@ const SolutionSection = () => {
             <Rocket className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">AI 바이브 코딩이</span><br className="block sm:hidden" />
-            <span className="sm:inline">해답입니다</span>
+            {"AI 바이브코딩이\u00A0해답입니다"}
           </h2>
-          <p className="text-[15px] text-muted-foreground max-w-2xl mx-auto">
-            전통적인 코딩 교육의 한계를 뛰어넘어, AI와 함께하는 새로운 학습 경험을 제공합니다
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <span className="sm:hidden">전통적인 코딩 교육의 한계를 뛰어넘어,<br/>AI와 함께하는 새로운 학습 경험을 제공합니다</span>
+            <span className="hidden sm:inline">전통적인 코딩 교육의 한계를 뛰어넘어, AI와 함께하는 새로운 학습 경험을 제공합니다</span>
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const SolutionSection = () => {
               </div>
               <div className="p-6 bg-[#dcfce7] text-center">
                 <h3 className="text-lg font-bold text-[#374151] flex items-center justify-center">
-                  <CheckCircle className="w-6 h-6 mr-2 text-[#059669]" />
+                  <CheckCircle className="w-6 h-6 mr-3 text-[#059669]" />
                   AI 바이브 코딩
                 </h3>
               </div>
