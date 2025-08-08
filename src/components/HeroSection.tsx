@@ -42,7 +42,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-5xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-8 leading-tight">
             <span className="text-white">AI 바이브코딩</span><br />
             <span className="text-accent">초단기 부트캠프</span>
           </h1>
