@@ -34,7 +34,7 @@ const HeroSection = () => {
       <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '4s' }} />
 
       <div className="w-full px-0 sm:px-4 md:px-6 lg:px-8 relative z-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center mt-[-30px] sm:mt-0">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white mb-8 animate-slide-up">
             <Zap className="w-4 h-4 mr-2" />
