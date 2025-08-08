@@ -38,7 +38,7 @@ const FixedFooter = () => {
                   style={{ animationDuration: '8s' }}
                 >
                   <span className="hidden sm:inline">🚀 지금 바로 AI로 홈페이지 만들기</span>
-                  <span className="sm:hidden">🚀 AI 홈페이지 제작</span>
+                  <span className="sm:hidden">🚀 지금 바로 AI로 홈페이지 만들기</span>
                   <span className="text-xl group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </a>
               </Button>
