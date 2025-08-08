@@ -46,7 +46,7 @@ const FAQSection = () => {
             자주 묻는 <span className="text-primary">질문들</span>
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
-            수강을 고민하시는 분들이 가장 궁금해하시는 질문들을 모았습니다
+            수강 전 가장 궁금한 질문들만 모았습니다
           </p>
         </div>
 
