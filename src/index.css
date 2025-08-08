@@ -92,7 +92,7 @@
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222.2 84.9% 4.9%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
@@ -152,14 +152,9 @@
     user-select: text;
   }
 
-  /* 400px 이하에서 여백 완전 제거 */
-  @media (max-width: 400px) {
+  /* 모바일에서 섹션 바깥 좌우 패딩만 제거하여 내부 px-[5px]가 적용되도록 함 */
+  @media (max-width: 640px) {
     .section-padding {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-    
-    .w-full {
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
