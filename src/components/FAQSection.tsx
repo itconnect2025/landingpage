@@ -42,7 +42,7 @@ const FAQSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <HelpCircle className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             자주 묻는 <span className="text-primary">질문들</span>
           </h2>
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">

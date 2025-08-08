@@ -22,7 +22,7 @@ const FinalCTASection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-8">
             <Zap className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6">
             지금도 늦지 않았습니다!<div style={{ height: '16px' }}></div>
             <span className="text-accent">얼리버드 할인</span>
           </h2>

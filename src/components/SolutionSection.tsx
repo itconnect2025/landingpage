@@ -36,7 +36,7 @@ const SolutionSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-full mb-6">
             <Rocket className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="text-primary">AI 바이브 코딩이</span><br className="block sm:hidden" />
             <span className="sm:inline">해답입니다</span>
           </h2>

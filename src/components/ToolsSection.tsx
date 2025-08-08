@@ -65,7 +65,7 @@ const ToolsSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <Wrench className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="text-primary">최신 AI 도구</span>를 활용해<div style={{ height: '16px' }}></div>
             개발자처럼 만드는 프로젝트 강의
           </h2>
