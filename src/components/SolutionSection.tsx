@@ -30,7 +30,7 @@ const SolutionSection = () => {
 
   return (
     <section className="section-padding bg-white relative overflow-hidden lg:min-h-[500px]">
-      <div className="w-full pt-50 pb-50 px-2.5 sm:px-0">
+      <div className="w-full pt-50 pb-50 px-[5px] sm:px-0">
         {/* Solution Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-full mb-6">

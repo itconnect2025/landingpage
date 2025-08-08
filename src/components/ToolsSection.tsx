@@ -60,7 +60,7 @@ const ToolsSection = () => {
 
   return (
     <section className="section-padding bg-gradient-subtle lg:min-h-[500px]">
-      <div className="w-full pt-50 pb-50">
+      <div className="w-full pt-50 pb-50 px-[5px] sm:px-0">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <Wrench className="w-10 h-10 text-white" />

@@ -17,7 +17,7 @@ const FinalCTASection = () => {
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full animate-float" style={{ animationDelay: '4s' }} />
       </div>
 
-      <div className="w-full relative z-10 pt-50 pb-50 px-2.5 sm:px-0">
+      <div className="w-full relative z-10 pt-50 pb-50 px-[5px] sm:px-0">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-8">
             <Zap className="w-10 h-10 text-white" />
