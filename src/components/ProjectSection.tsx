@@ -139,7 +139,7 @@ const ProjectSection = () => {
 
         {/* ROI Section */}
         <div className="mt-20 text-center">
-          <div className="inline-block card-gradient glow-primary p-5 hover:scale-105 transition-transform duration-300">
+          <div className="inline-block card-gradient glow-primary p-8 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-bold text-primary mb-6">🚀 압도적 비용 절감 효과</h3>
             <div className="flex items-center justify-center space-x-4 mb-6">
               <span className="text-[24px] sm:text-3xl font-bold text-red-500 line-through">외주 개발 수천만원</span>
