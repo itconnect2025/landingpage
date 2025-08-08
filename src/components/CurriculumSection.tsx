@@ -116,13 +116,13 @@ const CurriculumSection = () => {
       lessonCount: 7,
       color: "from-red-500 to-pink-600",
       lessons: [
-        "Lovable Project를 Cursor로 가져오기",
-        "사용자 경험을 업그레이드하는 디자인 디테일 완성",
-        "검색엔진 최적화 (SEO) 설정 및 등록하기",
-        "데이터 기반 의사결정을 위한 Google Analytics 설정",
-        "광고 성과 극대화하는 Facebook Pixel 완벽 설정",
+        "Lovable Project에서 Cursor로 옮기기",
+        "Netlify로 무료로 랜딩페이지 올리기",
+        "구글, 네이버에 랜딩페이지 검색 걸리게 하기",
+        "Google Analytics + Hotjar로 데이터 수집",
+        "Facebook Pixel 로 실제 광고 해보기",
         "네이버·메타·구글 광고 진짜로 돌려보기",
-        "고객 행동 데이터로 서비스 개선하는 Hotjar 활용법"
+        "사용자 경험을 업그레이드하는 디자인 디테일 완성"
       ]
     }
   ];
@@ -137,15 +137,18 @@ const CurriculumSection = () => {
             <BookOpen className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">9개 챕터</span>로 완성하는
-            실전 바이브코딩 여정
+            <span className="sm:hidden">9개 챕터로 완성하는<br/>실전 바이브코딩 여정</span>
+            <span className="hidden sm:inline"><span className="text-primary">9개 챕터</span>로 완성하는
+            실전 바이브코딩 여정</span>
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto mb-8">
-            체계적인 단계별 학습으로 초보자도 전문가 수준의 결과물을 만들 수 있습니다
+            <span className="sm:hidden">체계적인 학습으로 비개발자도<br/>개발자처럼 제작할 수 있게 됩니다.</span>
+            <span className="hidden sm:inline">체계적인 단계별 학습으로 초보자도 전문가 수준의 결과물을 만들 수 있습니다</span>
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-gradient-primary text-white rounded-2xl">
             <Clock className="w-5 h-5 mr-2" />
-            <span className="font-bold">총 {totalLessons}개 강의 완주</span>
+            <span className="font-bold sm:hidden">총 37개 강의로 구성</span>
+            <span className="font-bold hidden sm:inline">총 {totalLessons}개 강의 완주</span>
           </div>
         </div>
 

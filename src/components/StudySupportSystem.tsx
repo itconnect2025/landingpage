@@ -24,15 +24,15 @@ const StudySupportSystem = () => {
 
   return (
     <section className="section-padding bg-gradient-subtle lg:min-h-[500px]">
-      <div className="w-full pt-50 pb-50 px-2.5 sm:px-0">
+      <div className="w-full pt-50 pb-50 px-[12px] sm:px-0">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <BookOpen className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">완벽한 학습 지원 시스템</span>
+            <span className="text-primary">혼자서도 충분히 학습할 수 있도록</span><br className="hidden sm:block" /> 다양한 지원을 약속합니다
           </h2>
-          <p className="text-[15px] text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
             혼자서도 충분히 학습할 수 있도록 다양한 지원 시스템을 제공합니다
           </p>
         </div>

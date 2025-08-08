@@ -9,7 +9,7 @@ const ProjectSection = () => {
   const projects = [
     {
       id: 0,
-      title: "📄 명함 텍스트 인식 추출 프로그램",
+      title: "📄 명함 인식 추출 프로그램",
       description: "PDF나 이미지 파일로 된 명함에서 전화번호, 이름, 회사명 등을 자동으로 인식하여 추출하는 AI 기반 프로그램입니다.",
       color: "from-blue-500 to-purple-500",
       difficulty: "초급",
@@ -68,11 +68,12 @@ const ProjectSection = () => {
             <Code className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            10시간으로 이 <span className="text-primary">5가지 프로젝트</span>를
-            모두 완성합니다
+            <span className="sm:hidden">10시간으로 이 <span className="text-primary">5가지 프로젝트</span>를<br/>모두 완성합니다.</span>
+            <span className="hidden sm:inline">10시간으로 이 <span className="text-primary">5가지 프로젝트</span>를 모두 완성합니다</span>
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
-            각 프로젝트는 실제 비즈니스에 바로 활용할 수 있는 완성도 높은 결과물입니다
+            <span className="sm:hidden">각 프로젝트는 실제 비즈니스에 적용 가능한<br/> 완성도 높은 결과물입니다.</span>
+            <span className="hidden sm:inline">각 프로젝트는 실제 비즈니스에 바로 활용할 수 있는 완성도 높은 결과물입니다</span>
           </p>
         </div>
 
