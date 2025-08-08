@@ -60,7 +60,8 @@ const ValuePropositionSection = () => {
             다른 강의와 <span className="text-primary">뭐가 다른가요?</span>
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
-            기존 코딩 교육의 한계를 뛰어넘는 혁신적인 학습 경험을 제공합니다
+            <span className="sm:hidden">기존 코딩 교육의 한계를 뛰어넘는<br/>혁신적인 학습 경험을 제공합니다</span>
+            <span className="hidden sm:inline">기존 코딩 교육의 한계를 뛰어넘는 혁신적인 학습 경험을 제공합니다</span>
           </p>
         </div>
 
