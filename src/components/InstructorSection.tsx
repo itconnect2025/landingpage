@@ -33,7 +33,7 @@ const InstructorSection = () => {
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             비개발자 출신의 IT 개발 대표가<br/> 직접 알려드립니다.
           </h2>
-          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-[19px] sm:text-2xl text-muted-foreground max-w-3xl mx-auto">
             <span className="sm:hidden">개발자가 아닌 사람도 충분히 따라할 수 있도록<br/>바이브코딩 노하우 전수</span>
             <span className="hidden sm:inline">개발자가 아닌 사람도 충분히 따라할 수 있도록 바이브코딩 노하우 전수</span>
           </p>
