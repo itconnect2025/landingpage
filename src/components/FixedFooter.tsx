@@ -19,7 +19,7 @@ const FixedFooter = () => {
                 <p>
                   <span className="font-bold text-yellow-300">"이 페이지는 코딩없이 100% AI로 만들어졌습니다"</span>
                   <br />
-                  <span className="block mt-1">복잡한 코딩 대신 AI와 대화만으로 개발! 궁금하다면 클릭하세요 →</span>
+                  <span className="block mt-1">복잡한 코딩 대신 AI와 대화만으로 개발! 궁금하다면 →</span>
                 </p>
               </div>
             </div>
