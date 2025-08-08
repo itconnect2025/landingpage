@@ -136,11 +136,11 @@ const CurriculumSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <BookOpen className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="text-primary">9개 챕터</span>로 완성하는<div style={{ height: '16px' }}></div>
             실전 바이브코딩 여정
           </h2>
-          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto mb-8">
             체계적인 단계별 학습으로 초보자도 전문가 수준의 결과물을 만들 수 있습니다
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-gradient-primary text-white rounded-2xl">

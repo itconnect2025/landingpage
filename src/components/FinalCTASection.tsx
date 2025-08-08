@@ -22,11 +22,11 @@ const FinalCTASection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-8">
             <Zap className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-white mb-6">
             지금도 늦지 않았습니다!<div style={{ height: '16px' }}></div>
             <span className="text-accent">얼리버드 할인</span>
           </h2>
-          <p className="text-2xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-[19px] text-white/90 max-w-3xl mx-auto">
             더 이상 미루지 마세요. 10시간 투자로 평생 써먹을 수 있는 스킬을 얻어가세요.
           </p>
         </div>

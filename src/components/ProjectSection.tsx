@@ -67,11 +67,11 @@ const ProjectSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <Code className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             10시간으로 이 <span className="text-primary">5가지 프로젝트</span>를<div style={{ height: '16px' }}></div>
             모두 완성합니다
           </h2>
-          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
             각 프로젝트는 실제 비즈니스에 바로 활용할 수 있는 완성도 높은 결과물입니다
           </p>
         </div>

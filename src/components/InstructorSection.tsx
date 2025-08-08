@@ -30,11 +30,11 @@ const InstructorSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <User className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="text-primary">비개발자 출신의 IT 개발 대표</span>가<div style={{ height: '16px' }}></div>
             직접 알려드립니다
           </h2>
-          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
             개발자가 아닌 사람도 충분히 따라할 수 있도록 바이브코딩 노하우 전수
           </p>
         </div>

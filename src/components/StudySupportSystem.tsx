@@ -29,10 +29,10 @@ const StudySupportSystem = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
             <BookOpen className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="text-primary">완벽한 학습 지원 시스템</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-[15px] text-muted-foreground max-w-3xl mx-auto">
             혼자서도 충분히 학습할 수 있도록 다양한 지원 시스템을 제공합니다
           </p>
         </div>

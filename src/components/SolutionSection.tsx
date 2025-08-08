@@ -36,11 +36,11 @@ const SolutionSection = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-full mb-6">
             <Rocket className="w-10 h-10 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
             <span className="text-primary">AI 바이브 코딩이</span><br className="block sm:hidden" />
             <span className="sm:inline">해답입니다</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-[15px] text-muted-foreground max-w-2xl mx-auto">
             전통적인 코딩 교육의 한계를 뛰어넘어, AI와 함께하는 새로운 학습 경험을 제공합니다
           </p>
         </div>

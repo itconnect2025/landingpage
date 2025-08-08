@@ -15,11 +15,11 @@ const FixedFooter = () => {
           <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3 sm:gap-4 lg:gap-8 text-center lg:text-left">
             {/* 텍스트 영역 */}
             <div className="flex-1 text-white">
-              <div className="max-w-[680px] mx-auto lg:mx-0 text-sm sm:text-base lg:text-xl xl:text-2xl font-medium leading-snug sm:leading-relaxed">
+              <div className="text-base sm:text-lg lg:text-xl xl:text-2xl font-medium leading-relaxed">
                 <p>
-                  <span className="font-bold text-yellow-300">"강의를 수강하면 지금 보는 이 페이지를 코딩없이 100% AI로 만들 수 있습니다"</span>
+                  <span className="font-bold text-yellow-300">"이 페이지는 코딩없이 100% AI로 만들어졌습니다"</span>
                   <br />
-                  <span className="block mt-1">복잡한 코딩 대신 AI와 대화만으로! 당신도 오늘 시작할 수 있습니다 &gt;&gt;</span>
+                  <span className="block mt-1">복잡한 코딩 대신 AI와 대화만으로 개발! 궁금하다면 클릭하세요 →</span>
                 </p>
               </div>
             </div>
