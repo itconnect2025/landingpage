@@ -31,7 +31,7 @@ const InstructorSection = () => {
             <User className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">비개발자 출신의 IT 개발 대표</span>가<div style={{ height: '16px' }}></div>
+            <span className="text-primary">비개발자 출신의 IT 개발 대표</span>가
             직접 알려드립니다
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">

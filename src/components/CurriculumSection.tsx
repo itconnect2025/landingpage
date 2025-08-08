@@ -137,7 +137,7 @@ const CurriculumSection = () => {
             <BookOpen className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">9개 챕터</span>로 완성하는<div style={{ height: '16px' }}></div>
+            <span className="text-primary">9개 챕터</span>로 완성하는
             실전 바이브코딩 여정
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -165,7 +165,7 @@ const CurriculumSection = () => {
                 </div>
 
                 {/* Card Content */}
-                <div className="p-8 pt-20 flex-1 flex flex-col">
+                <div className="p-8 pt-20 flex-1 flex flex-col px-[11px] sm:px-8">
                   {/* Title */}
                   <div className="mb-2">
                     <h3 className="text-2xl font-bold text-foreground leading-tight text-left">

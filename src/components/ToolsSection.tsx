@@ -66,7 +66,7 @@ const ToolsSection = () => {
             <Wrench className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">최신 AI 도구</span>를 활용해<div style={{ height: '16px' }}></div>
+            <span className="text-primary">최신 AI 도구</span>를 활용해
             개발자처럼 만드는 프로젝트 강의
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
@@ -105,7 +105,36 @@ const ToolsSection = () => {
                   </div>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    {tool.description}
+                    {tool.name === 'ChatGPT' && (
+                      <>
+                        질문답변, 텍스트 생성, 번역 등<br />다양한 작업을 수행
+                      </>
+                    )}
+                    {tool.name === 'Claude' && (
+                      <>
+                        분석, 창작, 코딩 등에 강점이며,<br />다양한 작업을 수행
+                      </>
+                    )}
+                    {tool.name === 'Cursor AI' && (
+                      <>
+                        자연어 명령어와 예측 편집으로<br />개발 생산성을 높임
+                      </>
+                    )}
+                    {tool.name === 'Lovable' && (
+                      <>
+                        자연어 채팅만으로 코딩 없이<br />웹 어플리케이션 개발
+                      </>
+                    )}
+                    {tool.name === 'Netlify' && (
+                      <>
+                        웹/앱을 빌드, 배포, 확장하는<br />서비스 플랫폼
+                      </>
+                    )}
+                    {tool.name === 'Genspark' && (
+                      <>
+                        실시간 자료 조사 등<br />다양한 AI Agent 기능 제공
+                      </>
+                    )}
                   </p>
                 </div>
               </div>

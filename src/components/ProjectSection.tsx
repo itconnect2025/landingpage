@@ -68,7 +68,7 @@ const ProjectSection = () => {
             <Code className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            10시간으로 이 <span className="text-primary">5가지 프로젝트</span>를<div style={{ height: '16px' }}></div>
+            10시간으로 이 <span className="text-primary">5가지 프로젝트</span>를
             모두 완성합니다
           </h2>
           <p className="text-[19px] text-muted-foreground max-w-3xl mx-auto">
@@ -112,7 +112,7 @@ const ProjectSection = () => {
                     <span className="text-muted-foreground text-sm font-medium">{project.time}</span>
                   </div>
                   
-                  <p className="text-lg text-muted-foreground leading-relaxed flex-1 line-clamp-2">{project.description}</p>
+                  <p className="text-lg text-muted-foreground leading-relaxed flex-1">{project.description}</p>
                 </div>
               </div>
             ))}
@@ -142,15 +142,15 @@ const ProjectSection = () => {
           <div className="inline-block card-gradient glow-primary p-12 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-bold text-primary mb-6">🚀 압도적 비용 절감 효과</h3>
             <div className="flex items-center justify-center space-x-4 mb-6">
-              <span className="text-3xl font-bold text-red-500 line-through">외주 개발 수천만원</span>
+              <span className="text-[24px] sm:text-3xl font-bold text-red-500 line-through">외주 개발 수천만원</span>
               <ArrowRight className="w-6 h-6 text-muted-foreground" />
-              <span className="text-4xl font-bold text-primary">강의 수강 98,000원</span>
+              <span className="text-[28px] sm:text-4xl font-bold text-primary">강의 수강 98,000원</span>
             </div>
             <div className="mb-6">
               <span className="text-2xl font-bold text-accent">최대 99% 비용 절감!</span>
             </div>
             <div className="max-w-2xl mx-auto">
-              <p className="text-xl text-muted-foreground">
+              <p className="text-[15px] sm:text-xl text-muted-foreground">
                 MVP 제작 시 보통 수백~수천만원의 외주 비용 대신<br />
                 단 98,000원의 강의료로 직접 개발 역량을 키워 비용을 대폭 절감하세요
               </p>
