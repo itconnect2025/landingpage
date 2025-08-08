@@ -30,7 +30,7 @@ const StudySupportSystem = () => {
             <BookOpen className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
-            <span className="text-primary">혼자서도 충분히 학습할 수 있도록</span><br className="hidden sm:block" /> 다양한 지원을 약속합니다
+            밀착 지원으로 궁금한 부분 바로 해결
           </h2>
           <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
             혼자서도 충분히 학습할 수 있도록 다양한 지원 시스템을 제공합니다
