@@ -163,7 +163,7 @@ const ValuePropositionSection = () => {
                 "평생 사용 가능한 소스코드와 템플릿",
                 "지속적인 기술 업데이트와 커뮤니티 지원",
                 "개발 외주 없이도 자립할 수 있는 능력",
-                "창업 아이디어를 빠르게 검증할 수 있는 스킬"
+                "창업 아이템 빠르게 검증하는 스킬"
               ].map((item, i) => (
                 <div key={i} className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" />
