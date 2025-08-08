@@ -39,7 +39,7 @@ const ProblemSection = () => {
             <HelpCircle className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-[25px] sm:text-4xl md:text-6xl font-bold text-foreground mb-16">
-            혹시, 지금 <div style={{ height: '16px' }}></div> <span className="text-primary">이런 고민</span> 하고 계신가요?
+            혹시, 지금 <span className="text-primary">이런 고민</span> 하고 계신가요?
           </h2>
           
           {/* New Layout: Left 50% - Right 50% */}
