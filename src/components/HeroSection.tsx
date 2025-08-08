@@ -48,13 +48,13 @@ const HeroSection = () => {
           </h1>
 
           {/* Sub Headline */}
-          <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/90 mb-16 leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/90 mb-3 sm:mb-16 leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
             비전공자도 AI와 함께하는 바이브 코딩으로<br />
             <span className="text-accent font-semibold">MVP부터 포트폴리오까지</span>
           </p>
 
           {/* Key Values */}
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-8 mb-16 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-8 mb-3 sm:mb-16 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <div className="flex items-center bg-white/20 backdrop-blur-sm px-2 sm:px-3 md:px-6 py-2 sm:py-3 rounded-2xl text-white">
               <Clock className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 mr-1 sm:mr-2 md:mr-3" />
               <span className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg">단 10시간</span>
