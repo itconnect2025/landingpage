@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="space-y-2">
                   <p><span className="font-medium text-white">주소:</span> 경기도 과천시 과천대로7길 65, 과천상상자이타워 B동 202호</p>
                   <p><span className="font-medium text-white">이메일:</span> contact@itconnect.dev</p>
-                  <p><span className="font-medium text-white">연락처:</span> 010-8796-1600</p>
+                  {/* 연락처(전화번호) 항목 제거 */}
                 </div>
               </div>
             </div>
