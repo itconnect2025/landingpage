@@ -61,7 +61,7 @@ const ProjectSection = () => {
       <div className="absolute bottom-20 left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
       <div className="absolute top-1/3 left-1/3 w-24 h-24 bg-accent/10 rounded-full blur-2xl animate-pulse-slow" style={{ animationDelay: '4s' }}></div>
       
-      <div className="w-full relative z-10 pt-50 pb-50 px-[5px] sm:px-0">
+      <div className="w-full relative z-10 pt-50 pb-50 px-[12px] sm:px-0">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mb-8">
