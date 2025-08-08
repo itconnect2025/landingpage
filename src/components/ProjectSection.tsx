@@ -151,8 +151,9 @@ const ProjectSection = () => {
             </div>
             <div className="max-w-2xl mx-auto">
               <p className="text-[15px] sm:text-xl text-muted-foreground">
-                MVP 제작 시 보통 수백~수천만원의 외주 비용 대신<br />
-                단 98,000원의 강의료로 직접 개발 역량을 키워 비용을 대폭 절감하세요
+                MVP 제작에 들어가는<br />
+                수백 ~ 수천만원 외주비용 대신<br />
+                12만원 정도로 해결하세요
               </p>
             </div>
           </div>
