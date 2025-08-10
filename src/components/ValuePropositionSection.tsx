@@ -38,7 +38,7 @@ const ValuePropositionSection = () => {
     {
       title: "비용 효율성",
       description: "개발 외주비 대비 97% 절약",
-      value: "수천만원 → 98,000원",
+      value: "수천만원 → 126,500원",
       icon: "💰"
     },
     {

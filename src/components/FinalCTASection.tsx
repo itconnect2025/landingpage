@@ -44,7 +44,7 @@ const FinalCTASection = () => {
                 <div className="mb-6">
                   <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-1 sm:mb-2" style={{ marginBottom: '5px' }}>
                     <span className="text-2xl text-muted-foreground line-through">162,000원</span>
-                    <span className="text-5xl font-bold text-gradient-primary">98,000원</span>
+                    <span className="text-5xl font-bold text-gradient-primary">126,500원</span>
                   </div>
                   <div className="text-accent font-bold text-lg">
                     <div className="block sm:inline">얼리버드 40% 할인가</div>

@@ -145,7 +145,7 @@ const ProjectSection = () => {
             <div className="flex items-center justify-center space-x-4 mb-6">
               <span className="text-[24px] sm:text-3xl font-bold text-red-500 line-through">외주 개발 수천만원</span>
               <ArrowRight className="w-6 h-6 text-muted-foreground" />
-              <span className="text-[28px] sm:text-4xl font-bold text-primary">강의 수강 98,000원</span>
+              <span className="text-[28px] sm:text-4xl font-bold text-primary">강의 수강 126,500원</span>
             </div>
             <div className="mb-6">
               <span className="text-2xl font-bold text-accent">최대 99% 비용 절감!</span>
